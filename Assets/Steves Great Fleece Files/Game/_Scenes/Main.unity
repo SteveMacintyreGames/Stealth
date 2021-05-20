@@ -9806,38 +9806,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 336119012}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &337772464
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 337772465}
-  m_Layer: 0
-  m_Name: Sleeping Guard Cutscene
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &337772465
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337772464}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1787251480}
-  - {fileID: 1266939582}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &337939375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21818,7 +21786,7 @@ GameObject:
   - component: {fileID: 1061503864}
   - component: {fileID: 1061503863}
   m_Layer: 0
-  m_Name: CM_Mid_Shot
+  m_Name: CM vcam1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21858,12 +21826,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061503862}
   m_LocalRotation: {x: 0.10058774, y: -0.8401941, z: 0.16695982, w: 0.50604385}
-  m_LocalPosition: {x: 3.64, y: 2.92, z: -105.84}
+  m_LocalPosition: {x: 3.47, y: 2.92, z: -105.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1999053033}
-  m_Father: {fileID: 1266939582}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 22.48, y: -117.88, z: -0.003}
 --- !u!1 &1065407255
 GameObject:
@@ -24749,38 +24717,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1261461338}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1266939581
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1266939582}
-  m_Layer: 0
-  m_Name: CM Virtual Cameras
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1266939582
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266939581}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1492555878}
-  - {fileID: 1061503864}
-  m_Father: {fileID: 337772465}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1268561637
 GameObject:
   m_ObjectHideFlags: 0
@@ -27641,8 +27577,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 104518108}
-  m_Father: {fileID: 1266939582}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 28.695, y: 94.605, z: 0.585}
 --- !u!1 &1500425919
 GameObject:
@@ -31510,19 +31446,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 337772465}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1347687833628048, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
       propertyPath: m_Name
-      value: Actors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1347687833628048, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      value: Get_Card_Cutscene
       objectReference: {fileID: 0}
     - target: {fileID: 4328310163252698, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4328310163252698, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31566,12 +31498,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
---- !u!4 &1787251480 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4328310163252698, guid: 49be4103b035b448cb277ad3ac4b48f7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1787251479}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1789264552
 GameObject:
   m_ObjectHideFlags: 0
@@ -40502,7 +40428,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
   m_LocalRotation: {x: 0.10058774, y: -0.8401941, z: 0.16695982, w: 0.50604385}
-  m_LocalPosition: {x: 3.64, y: 2.92, z: -105.84}
+  m_LocalPosition: {x: 3.47, y: 2.92, z: -105.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
