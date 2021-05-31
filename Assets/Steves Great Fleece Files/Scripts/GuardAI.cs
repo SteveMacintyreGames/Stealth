@@ -6,14 +6,17 @@ using UnityEngine.AI;
 public class GuardAI : MonoBehaviour
 { 
     public List<Transform> wayPoints; 
-    private NavMeshAgent _guardAgent;
+    public NavMeshAgent _guardAgent;
     private Animator _anim;
+
 
     [SerializeField] private int _currentTarget;
     private bool _targetReached;
+    public bool coinTossed;
+    public Vector3 coinPos;
 
     private bool _reverse;
-    private bool _walking;
+    public bool walking;
 
     float distance;
    
@@ -21,7 +24,7 @@ public class GuardAI : MonoBehaviour
     {   
         _guardAgent = GetComponent<NavMeshAgent>();
         _anim = GetComponent<Animator>();
-        _walking = false;
+        walking = false;
          
     }
         
@@ -34,7 +37,7 @@ public class GuardAI : MonoBehaviour
         {
             return;
         }
-       if (wayPoints.Count >0 && wayPoints[_currentTarget] != null)
+       if (wayPoints.Count >0 && wayPoints[_currentTarget] != null && coinTossed == false)
        {
            _guardAgent.SetDestination(wayPoints[_currentTarget].position);
            
@@ -45,9 +48,9 @@ public class GuardAI : MonoBehaviour
 
             distance = Vector3.Distance(transform.position, wayPoints[_currentTarget].position);
 
-            if (distance >1f)
+            if (distance >1f && (_targetReached ==true))
             {
-                _walking = true;
+                walking = true;
             }
 
             if(distance < 1f && _targetReached == false)
@@ -57,13 +60,23 @@ public class GuardAI : MonoBehaviour
                 StartCoroutine(WaitBeforeMoving());               
             }
        }
+       else
+       {
+           //chasing coin
+           float distance = Vector3.Distance(transform.position, coinPos);
+           if (distance < 4f)
+           {
+               walking = false;
+           }
+
+       }
        
     }
     void AnimateWalk()
     {
         if (_anim != null)
         {
-            if (_walking)
+            if (walking)
             {
                 _anim.SetBool("isWalking",true);
             }
@@ -80,15 +93,15 @@ public class GuardAI : MonoBehaviour
         var timeToWait = Random.Range(2f,5f);
         if(_currentTarget == wayPoints.Count-1)
         {
-           _walking = false;
+           walking = false;
             yield return new WaitForSeconds(timeToWait);
-            _walking = true;
+            walking = true;
         }
         else if (_currentTarget == 0)
         {
-            _walking = false;
+            walking = false;
             yield return new WaitForSeconds(timeToWait);
-            _walking = true;
+            walking = true;
         }
        
         
