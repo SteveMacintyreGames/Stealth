@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
         ResetCam();
         player.gameObject.SetActive(true);
         music.Play();
+        music.volume = .24f;
     }
     void ResetCam()
     {

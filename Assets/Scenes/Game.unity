@@ -18451,7 +18451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voiceOver: {fileID: 1411488117}
-  music: {fileID: 0}
+  music: {fileID: 1823460149}
 --- !u!4 &396230477
 Transform:
   m_ObjectHideFlags: 0
@@ -29292,19 +29292,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 663196987}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1582845966}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Quit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &663196987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38649,19 +38637,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 904923665}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1582845966}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &904923665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40330,19 +40306,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 942037678}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1582845966}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &942037678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41318,19 +41282,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 964684033}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1582845966}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Quit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &964684033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61515,49 +61467,6 @@ Transform:
   m_Father: {fileID: 970519382}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1582845965
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1582845967}
-  - component: {fileID: 1582845966}
-  m_Layer: 0
-  m_Name: UIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1582845966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1582845965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ebd926d666c7138181862dde2b44a8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1582845967
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1582845965}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6400003, y: 3.83, z: -107.87}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1583539057
 GameObject:
   m_ObjectHideFlags: 0
@@ -69595,8 +69504,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1823460148}
-  - component: {fileID: 1823460150}
   - component: {fileID: 1823460149}
+  - component: {fileID: 1823460150}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -69630,7 +69539,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1ee40b7ef84b343d09eb49e17dc9f455, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.23
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -83048,8 +82957,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: 0.26903656, y: 0.684365, z: -0.3039836, w: 0.605688}
-  m_LocalPosition: {x: -2.64, y: 3.83, z: -107.87}
+  m_LocalRotation: {x: -0.12535207, y: -0.8374319, z: 0.48607427, w: -0.2161633}
+  m_LocalPosition: {x: -7.1032777, y: 12.85, z: 33.50225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
