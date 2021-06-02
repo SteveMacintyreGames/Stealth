@@ -17,6 +17,7 @@ public class GrabKeyCardActivation : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            GameManager.Instance.HasCard = true;
             keycardCutscene.gameObject.SetActive(true);
             StartCoroutine(TurnGamePlayCharactersOffTemporarily());
             

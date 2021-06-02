@@ -8,9 +8,10 @@ public class GuardSee : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Darren Spotted!");
+       
         if (other.tag == "Player")
         {
+            //Debug.Log("Darren Spotted!");
             _gameOverCutScene.gameObject.SetActive(true);
         }
     }
